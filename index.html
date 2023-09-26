@@ -9,15 +9,15 @@
     />
   </head>
   <body>
-    <div id="header--container" class="sticky">
+    <div id="header--container">
       <div>
         <p id="logo">
           <span id="the">the</span> <span id="analog">analog</span> specialist
         </p>
       </div>
       <ul id="nav">
-        <li><a href="#" class="on">Home</a></li>
-        <li><a href="#">For Sale</a></li>
+        <li><a href="#section_1">Home</a></li>
+        <li><a href="#for_sale">For Sale</a></li>
         <li><a href="#">Repairs</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Contact</a></li>
@@ -47,21 +47,32 @@
         </div>
 
         <div class="sales--cont">
-          <div class="sales">
+          <div class="sales sas">
             <div class="textHover">
-              <div class="brand--cont"></div>
+              <div class="brand--cont">
+                <p class="brand">Steinway & Sons</p>
+              </div>
             </div>
           </div>
         </div>
 
         <div class="sales--cont">
-          <div class="sales">
+          <div class="sales Blüthner">
             <div class="textHover">
-              <div class="brand--cont"></div>
+              <div class="brand--cont">
+                <p class="brand">Blüthner</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      window.addEventListener("scroll", function () {
+        var nav = document.getElementById("header--container");
+        nav.classList.toggle("sticky", window.scrollY > 0);
+      });
+    </script>
   </body>
 </html>
