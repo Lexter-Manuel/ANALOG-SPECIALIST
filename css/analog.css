@@ -7,7 +7,7 @@
 html, body {
     font-family: 'Courier New', Courier, monospace;
     letter-spacing: 0.15em;
-    background-color: #ffffff;
+    background-color: #333333ff;
 }
 
 
@@ -15,8 +15,7 @@ html, body {
     display: flex;
     height: 12vh;
     justify-content: space-between;
-    background-color: rgb(32, 32, 32); /*#333333ff*/
-    overflow: hidden;
+    background-color: rgb(32, 32, 32);
     z-index: 1000;
 }
 
@@ -136,5 +135,84 @@ a:hover, a.on {
 
 .float:hover {
     transform: rotateY(0);
-    box-shadow: 20px 20px 20px black;
+    box-shadow: 20px 20px 5px black;
+}
+
+#for_sale {
+    background: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(../img/sheets.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px 10px;
+    width: 100%;
+}
+
+.section_title {
+    color: white;
+    font-size: 66px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: 1000px;
+    margin: 25px auto;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sales--cont {
+    width: 330px;
+    height: 300px;
+    border-radius: 10px;
+    border: 2px solid rgba( 255, 255, 255, 0.18 );
+    position: relative;
+    text-align: center;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.sales {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.yamaha {
+    background-image: url(../img/pexels-pixabay-164743.jpg);
+}
+
+.textHover {
+    position: absolute;
+    background-color: rgba(36, 36, 36, 0.5);
+    backdrop-filter: blur(3px);
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: 0.7s ease;
+}
+
+.sales--cont:hover .textHover {
+    height: 100%;
+}
+
+.brand--cont {
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.brand {
+    color: white;
+    text-transform: uppercase;
 }
