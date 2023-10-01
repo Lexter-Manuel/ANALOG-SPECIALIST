@@ -8,7 +8,7 @@
 html, body {
     font-family: 'Playfair Display', Courier, monospace;
     letter-spacing: 0.15em;
-    background-color: black;
+    background-color: #1d1d1d;
 }
 
 
@@ -281,8 +281,9 @@ a:hover {
 }
 
 .repair_title {
-    border-bottom: 3px solid white;
-    background-color: rgba(255, 255, 255, 0.075);
+    /* border-bottom: 3px solid black; */
+    background-color: rgba(0, 0, 0, 0.5);
+    box-shadow: 7px 10px 3px rgb(107, 107, 107) ;
     border-radius: 30px;
     padding: 10px 20px;
 }
@@ -300,15 +301,15 @@ a:hover {
 }
 
 .available--repair {
-    width: 50%;
+    width: 60%;
     height: 400px;
     overflow-y: scroll;
-    background-color: rgba(255, 255, 255, 0.075);
-    border-top: 1px gray solid;
-    border-bottom: 1px gray solid;
-    border-left: 1px gray solid;
-    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-top: 1px rgba(255, 255, 255, 0.5) solid;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) solid;
+    border-left: 1px rgba(255, 255, 255, 0.5) solid;
     display:block;
+    margin-right: 150px;
 }
 
 .available--repair::-webkit-scrollbar {
@@ -316,19 +317,19 @@ a:hover {
 }
 
 .available--repair::-webkit-scrollbar-track {
-    background-image: linear-gradient(rgb(10, 10, 10),rgb(20, 20, 20),gray,rgb(20, 20, 20),rgb(10, 10, 10));
+    background-image: linear-gradient(rgb(30, 30, 30),rgb(54, 54, 54),rgb(20, 20, 20),rgb(54, 54, 54),rgb(30, 30, 30));
     border-radius: 15px;
 }
 
 .available--repair::-webkit-scrollbar-thumb {
-    box-shadow: inset 5px 0 10px rgba(0,0,0);
+    box-shadow: inset 5px 0 10px black;
 }
 
 .repair_items {
     width: 320px;
     height: 320px;
     background: black;
-    margin: 20px 30px;
+    margin: 20px 70px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -377,4 +378,27 @@ a:hover {
 
 .resto::after {
     content: 'Brand New Restoration';
+}
+
+.offer_title {
+    color: white;
+    padding: 40px 40px;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid silver;
+    border-right: none;
+    border-radius: 10px 50px 50px 10px;
+}
+
+.offer_holder {
+    width: 100%;
+    height: 450px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
